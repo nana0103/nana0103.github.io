@@ -26,7 +26,7 @@
         header p{
             margin: 1rem 0;
         }
-        #btn{
+        .btn{
             display: inline-block;
             text-decoration: none;
             color:darkgoldenrod;
@@ -45,9 +45,13 @@
 <body>
     <header>
         
-        <a href="#" id="btn">
-        		<script>
-		var otime=document.getElementById("btn");
+        <a href="#" class="btn">
+        点击跳转
+        </a>
+	    <div id="time>
+	    </div>
+		      	<script>
+		var otime=document.getElementById("time");
 function showcurrenttime(){
 	var today=new Date;
 	var year=today.getFullYear();
@@ -72,7 +76,6 @@ function showcurrenttime(){
 showcurrenttime();
 setInterval(showcurrenttime,1000);
 		</script>
-        </a>
     </header>
     <section>
         <h1></h1>
